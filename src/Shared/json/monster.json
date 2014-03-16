@@ -1,0 +1,416 @@
+{ 
+	"imagePath": "images/sprites/monsters.png",
+	"tileSize" : 48,
+	"tilesWide": 16,
+	"monsters":{
+		"TURTLE" : {
+			"stats" : {
+				"maxHP" : 50,
+				"STR" : 1,
+		        "DEF" : 1, 
+	            "DEX" : 1,
+	            "STA" : 0, 
+	            "SPD" : 1,
+	            "AGL" : 0, 
+	            "VUL" : 0, 
+	            "LUK" : 0
+			},
+			"radius":  20,
+			"exp"   :  4,
+			"touchDamage" : 1,
+			"drops" : {
+				"TURTLE_PASTE"  : 100,
+				"STICK"         : 0.00000001,
+				"BLUE_BERRIES"  : 100,
+				"BIG_STICK"     : 100,
+				"PASTE_SHOOTER" : 0.0000001,
+				"BOMB"          : 100,
+				"RING_OF_POWER" : 0.0000001,
+				"NINJA_STAR":0.00000001
+
+			},
+
+			"behavior" : {
+				"CALM"     : {"attack":"RANDOM_ATTACK","movement":"RETURN_TO_SPAWN"},
+				"ATTACKED" : {"attack":"ATTACK","movement":"FOLLOW"},
+				"DIEING"   : {"attack":"DOUBLE_ATTACK","movement":"SPIN_FOLLOW"}
+			},
+
+			"attack" : "MELEE_2",
+
+			"imageIndex" : "mo.png",
+			"onNew" : {
+				"image" : "mo.png",
+				"sound" : "placeholder.sound"
+			},
+			"onOld" : {
+				"image" : "mo.png",
+				"sound" : "turtleDeath"
+			}
+		},
+
+		"SKELETON_TURTLE" : {
+			"stats" : {
+				"maxHP" : 100,
+				"STR" : 1,
+		        "DEF" : 1, 
+	            "DEX" : 1,
+	            "STA" : 0, 
+	            "SPD" : 1,
+	            "AGL" : 0, 
+	            "VUL" : 0, 
+	            "LUK" : 0
+			},
+			"radius":  20,
+			"exp"   :  10,
+			"touchDamage" : 3,
+			"drops" : {
+				"BIG_STICK"     : 20,
+				"GRENADE_LAUNCHER": 2,
+				"NECKLACE_OF_LUCK" : 5,
+				"UNFORTUNATE_ARMOR": 3,
+				"BOOMERANG": 100,
+				"NINJA_STAR":10
+			},
+
+			"behavior" : {
+				"CALM"     : {"attack":"RANDOM_ATTACK","movement":"RETURN_TO_SPAWN"},
+				"ATTACKED" : {"attack":"ATTACK","movement":"FOLLOW"},
+				"DIEING"   : {"attack":"DOUBLE_ATTACK","movement":"SPIN_FOLLOW"}
+			},
+
+			"attack" : "MELEE_1",
+
+			"imageIndex" : "skeleton_mo.png",
+			"onNew" : {
+				"image" : "skeleton_mo.png",
+				"sound" : "placeholder.sound"
+			},
+			"onOld" : {
+				"image" : "mo.png",
+				"sound" : "turtleDeath"
+			}
+		},
+
+
+		"MAGIC_TURTLE" : {
+			"stats" : {
+				"maxHP" : 400,
+				"STR" : 1,
+		        "DEF" : 1, 
+	            "DEX" : 1,
+	            "STA" : 0, 
+	            "SPD" : 1,
+	            "AGL" : 0, 
+	            "VUL" : 0, 
+	            "LUK" : 0
+			},
+			"radius":  25,
+			"exp"   :  100,
+			"touchDamage" : 10,
+			"drops" : {
+				"TURTLE_PASTE" : 100,
+				"MACHINE_GUN"      : 1,
+				"THUNDER_SCROLL"   : 5,
+				"BOMB"             : 20
+			},
+
+			"behavior" : {
+				"CALM"     : {"attack":"RANDOM_ATTACK","movement":"RETURN_TO_SPAWN"},
+				"ATTACKED" : {"attack":"ATTACK","movement":"TELEPORT_TO_PLAYER"},
+				"DIEING"   : {"attack":"QUAD_ATTACK","movement":"SPIN_FOLLOW"}
+			},
+
+			"attack" : "MELEE_2",
+
+			"imageIndex" : "magic_mo.png",
+			"onNew" : {
+				"image" : "magic_mo.png",
+				"sound" : "placeholder.sound"
+			},
+			"onOld" : {
+				"image" : "mo.png",
+				"sound" : "explosion"
+			}
+		},
+
+		"NINJA_TURTLE" : {
+			"stats" : {
+				"maxHP" : 800,
+				"STR" : 1,
+		        "DEF" : 1, 
+	            "DEX" : 1,
+	            "STA" : 0, 
+	            "SPD" : 6,
+	            "AGL" : 0, 
+	            "VUL" : 0, 
+	            "LUK" : 0
+			},
+			"radius":  35,
+			"exp"   :  210,
+			"touchDamage" : 10,
+			"drops" : {
+				"TURTLE_PASTE" : 100,
+				"NINJA_STAR"      : 95,
+				"BALL_CHAIN"   : 20,
+				"NUNCHUCKS" : 1,
+				"BOMB"             : 10
+			},
+
+			"behavior" : {
+				"CALM"     : {"attack":"RANDOM_ATTACK","movement":"RETURN_TO_SPAWN"},
+				"ATTACKED" : {"attack":"ATTACK","movement":"FOLLOW"},
+				"DIEING"   : {"attack":"QUAD_ATTACK","movement":"SPIN_FOLLOW"}
+			},
+
+			"attack" : "SPINNER_SLOW",
+
+			"imageIndex" : "ninja_mo.png",
+			"onNew" : {
+				"image" : "ninja_mo.png",
+				"sound" : "placeholder.sound"
+			},
+			"onOld" : {
+				"image" : "mo.png",
+				"sound" : "explosion"
+			}
+		},
+
+		"BIG_TURTLE" : {
+			"stats" : {
+				"maxHP" : 250,
+				"STR" : 5,
+		        "DEF" : 4, 
+	            "DEX" : 1,
+	            "STA" : 0, 
+	            "SPD" : 3,
+	            "AGL" : 0, 
+	            "VUL" : 0, 
+	            "LUK" : 0
+			},
+			"radius": 42,
+			"exp"   :  30,
+			"touchDamage" : 6,
+			"drops" : {
+				"TURTLE_PASTE" : 100,
+				"MACHINE_GUN"   : 100,
+				"STRENGTH_POTION"   : 100,
+				"PASTE_SHOOTERV2"   : 100,
+				"BOMB"    : 0.000000001
+			},
+
+			"behavior" : {
+				"CALM"     : {"attack":null,"movement":"RETURN_TO_SPAWN"},
+				"ATTACKED" : {"attack":"QUAD_ATTACK","movement":"SPIN_FOLLOW"},
+				"DIEING"   : {"attack":null,"movement":null}
+			},
+
+			"attack" : "PASTE_SHOT",
+
+			"imageIndex" : "mo.png",
+			"onNew" : {
+				"image" : "placeholder.png",
+				"sound" : "placeholder.sound"
+			},
+			"onOld" : {
+				"image" : "placeholder.png",
+				"sound" : "turtleDeath"
+			}
+		},
+		"BOX" : {
+			"stats" : {
+				"maxHP" : 50,
+				"STR" : 0,
+		        "DEF" : 3, 
+	            "DEX" : 0, 
+	            "STA" : 0, 
+	            "SPD" : 0,
+	            "AGL" : 0, 
+	            "VUL" : 0, 
+	            "LUK" : 0
+			},
+			"radius": 16,
+			"exp"   :  0,
+			"touchDamage" : 0,
+			"drops" : {
+				"TURTLE_PASTE" : 100,
+				"UNFORTUNATE_ARMOR": 100,
+				"FLAME_SWORD" : 0.000000000000000001
+			},
+
+			"behavior" : {
+				"CALM"     : {"attack":null,"movement":null},
+				"ATTACKED" : {"attack":null,"movement":null},
+				"DIEING"   : {"attack":null,"movement":null}
+			},
+
+			"attack" : null,
+
+			"imageIndex" : "box.jpg",
+			"onNew" : {
+				"image" : "placeholder.png",
+				"sound" : "placeholder.sound"
+			},
+			"onOld" : {
+				"image" : "placeholder.png",
+				"sound" : null
+			}
+		},
+		"TOWER" : {
+			"stats" : {
+				"maxHP" : 50,
+				"STR" : 0,
+		        "DEF" : 10000000, 
+	            "DEX" : 0.2, 
+	            "STA" : 0, 
+	            "SPD" : 0,
+	            "AGL" : 0, 
+	            "VUL" : 0, 
+	            "LUK" : 0
+			},
+			"radius": 16,
+			"exp"   :  0,
+			"touchDamage" : 0,
+			"drops" : {
+				"TURTLE_PASTE" : 100
+			},
+
+			"behavior" : {
+				"CALM"     : {"attack":"ATTACK","movement":"SPIN"},
+				"ATTACKED" : {"attack":"ATTACK","movement":"AIM"},
+				"DIEING"   : {"attack":"ATTACK","movement":"SPIN"}
+			},
+
+			"attack" : "MELEE_1",
+
+			"imageIndex" : null,
+			"onNew" : {
+				"image" : "placeholder.png",
+				"sound" : "placeholder.sound"
+			},
+			"onOld" : {
+				"image" : "placeholder.png",
+				"sound" : null
+			}
+		},
+		"LAVA" : {
+			"stats" : {
+				"maxHP" : 50,
+				"STR" : 0,
+		        "DEF" : 10000000, 
+	            "DEX" : 1, 
+	            "STA" : 0, 
+	            "SPD" : 0,
+	            "AGL" : 0, 
+	            "VUL" : 0, 
+	            "LUK" : 0
+			},
+			"radius": 16,
+			"exp"   :  0,
+			"touchDamage" : 1,
+			"drops" : {
+				"TURTLE_PASTE" : 100
+			},
+
+			"behavior" : {
+				"CALM"     : {"attack":null,"movement":null},
+				"ATTACKED" : {"attack":null,"movement":null},
+				"DIEING"   : {"attack":null,"movement":null}
+			},
+
+			"attack" : "MELEE_1",
+
+			"imageIndex" : null,
+			"onNew" : {
+				"image" : "placeholder.png",
+				"sound" : "placeholder.sound"
+			},
+			"onOld" : {
+				"image" : "placeholder.png",
+				"sound" : null
+			}
+		},
+		"NINTENDO_TURTLE" : {
+			"stats" : {
+				"maxHP" : 100000,
+				"STR" : 1,
+		        "DEF" : 1, 
+	            "DEX" : 0.5,
+	            "STA" : 0, 
+	            "SPD" : 7,
+	            "AGL" : 0, 
+	            "VUL" : 0, 
+	            "LUK" : 0
+			},
+			"radius":  80,
+			"exp"   :  120000,
+			"touchDamage" : 1000,
+			"drops" : {
+				"FLAME_SWORD" : 100,
+				"THUNDER_SCROLL" : 100,
+				"GRAPES" : 50
+			},
+
+			"behavior" : {
+				"CALM"     : {"attack":"RANDOM_ATTACK","movement":"RETURN_TO_SPAWN"},
+				"ATTACKED" : {"attack":"QUAD_ATTACK_WITH_BOMBS_AND_SHOOTING","movement":"SPIN_FOLLOW"},
+				"DIEING"   : {"attack":"QUAD_ATTACK_WITH_BOMBS_AND_SHOOTING","movement":"SPIN_FOLLOW"}
+			},
+
+			"attack" : "FLAME_SLASH",
+
+			"imageIndex" : "nintendo_mo.png",
+			"onNew" : {
+				"image" : "nintendo_mo.png",
+				"sound" : "placeholder.sound"
+			},
+			"onOld" : {
+				"image" : "mo.png",
+				"sound" : "turtleDeath"
+			}
+		},
+
+		"SMASH_TURTLE" : {
+			"stats" : {
+				"maxHP" : 2000,
+				"STR" : 0,
+		        "DEF" : 1, 
+	            "DEX" : 1, 
+	            "STA" : 0, 
+	            "SPD" : 4,
+	            "AGL" : 0, 
+	            "VUL" : 0, 
+	            "LUK" : 0
+			},
+			"radius": 70,
+			"exp"   :  3500,
+			"touchDamage" : 30,
+			"drops" : {
+				"TURTLE_PASTE" : 100,
+				"TURTLE_ELIXIR" : 10,
+				"THUNDER_SCROLL" : 1,
+				"SURPRISE_HAMMER" : 80,
+				"RING_OF_SPEED" : 5
+			},
+
+			"behavior" : {
+				"CALM"     : {"attack":"RANDOM_ATTACK","movement":"RETURN_TO_SPAWN"},
+				"ATTACKED" : {"attack":"SPAWN_ATTACKING_TURTLES","movement":"SPIN_FOLLOW"},
+				"DIEING"   : {"attack":"QUAD_ATTACK_WITH_BOMBS_AND_SHOOTING","movement":"SPIN_FOLLOW"}
+			},
+
+			"attack" : "SMASH",
+
+			"imageIndex" : "final_mo.png",
+			"onNew" : {
+				"image" : "placeholder.png",
+				"sound" : "placeholder.sound"
+			},
+			"onOld" : {
+				"image" : "placeholder.png",
+				"sound" : "explosion"
+			}
+		}
+	}
+	
+}

@@ -1,0 +1,15 @@
+    //show player colliding with walls
+
+    //show player colliding with boxes
+
+    //change to normal
+    player.accel.x = 2;
+    player.decel.x = 1;
+    player.accel.y = 2;
+    player.decel.y = 1; 
+
+    //show following camera  
+    camera.changeTarget(player);
+
+    //show camera on first box
+    camera.changeTarget(entities[81]);

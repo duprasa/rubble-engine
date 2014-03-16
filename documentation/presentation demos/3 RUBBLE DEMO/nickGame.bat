@@ -1,0 +1,2 @@
+node startGameServer.js
+pause

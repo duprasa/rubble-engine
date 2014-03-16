@@ -1,0 +1,351 @@
+{ 
+	"abilities":{
+		"MELEE_1" : {
+			"abilityType"  : "MELEE_1",
+			"hits"         : "ONCE",
+			"affects"      : 1,
+			"requires"     : null,
+			"cooldown"     : 250,
+			"AP"           : 10,
+			"timeToLive"   : 200,
+			"damage"       : 8,
+			"accel"        : 0,
+			"maxSpeed"     : 15,
+			"radius"       : 20,
+			"friction"	   : 0,
+			"color"        : "deeppink",
+			"imageindex" : "placeholder.png",
+			"onNew" : {
+				"image" : "placeholder.png",
+				"sound" : "shoot"
+			},
+			"onOld" : {
+				"image" : "placeholder.png",
+				"sound" : "placeholder.sound"
+			}
+	 	},
+		"SPINNER" : {
+			"abilityType"  : "SPINNER",
+			"hits"         : "ONCE",
+			"affects"      : 1,
+			"requires"     : null,
+			"cooldown"     : 250,
+			"AP"           : 8,
+			"timeToLive"   : 5000,
+			"damage"       : 1,
+			"accel"        : 0.5,
+			"maxSpeed"     : 50,
+			"radius"       : 15,
+			"friction"	   : 0,
+			"movement" 	   : "SPIN",
+			"color"        : "black",
+			"imageindex" : "placeholder.png",
+			"onNew" : {
+				"image" : "placeholder.png",
+				"sound" : "shoot"
+			},
+			"onOld" : {
+				"image" : "placeholder.png",
+				"sound" : "placeholder.sound"
+			}
+	 	},
+		"SPINNER_SLOW" : {
+			"abilityType"  : "SPINNER_SLOW",
+			"hits"         : "ONCE",
+			"affects"      : 1,
+			"requires"     : null,
+			"cooldown"     : 250,
+			"AP"           : 40,
+			"timeToLive"   : 4000,
+			"damage"       : 1,
+			"accel"        : 0.25,
+			"maxSpeed"     : 50,
+			"radius"       : 15,
+			"friction"	   : 0,
+			"movement" 	   : "SPIN",
+			"color"        : "black",
+			"imageindex" : "placeholder.png",
+			"onNew" : {
+				"image" : "placeholder.png",
+				"sound" : "shoot"
+			},
+			"onOld" : {
+				"image" : "placeholder.png",
+				"sound" : "placeholder.sound"
+			}
+	 	},
+		"SUPER_SPINNER" : {
+			"abilityType"  : "SUPER_SPINNER",
+			"hits"         : "ONCE",
+			"affects"      : 1,
+			"requires"     : "NINJA_STAR",
+			"cooldown"     : 250,
+			"AP"           : 10,
+			"timeToLive"   : 800,
+			"damage"       : 8,
+			"accel"        : 3,
+			"maxSpeed"     : 50,
+			"radius"       : 20,
+			"friction"	   : 0,
+			"movement" 	   : "SPIN_GROW",
+			"color"        : "black",
+			"imageindex" : "placeholder.png",
+			"onNew" : {
+				"image" : "placeholder.png",
+				"sound" : "shoot"
+			},
+			"onOld" : {
+				"image" : "placeholder.png",
+				"sound" : "placeholder.sound"
+			}
+	 	},
+		"GRENADE" : {
+			"abilityType"   : "GRENADE",
+			"hits"      : "ONCE",
+			"affects"       : 1,
+			"requires"      : null,
+			"cooldown"      : 250,
+			"AP"            : 16,
+			"timeToLive"     : 3000,
+			"damage"       : 20,
+			"accel"        : 0,
+			"maxSpeed"     : 5,
+			"radius"       : 15,
+			"friction"	   : 8,
+			"color"      : "gray",
+			"imageindex" : "placeholder.png",
+			"onNew" : {
+				"image" : "placeholder.png",
+				"sound" : "shoot"
+			},
+			"onOld" : {
+				"image" : "placeholder.png",
+				"sound" : "placeholder.sound"
+			}
+		},
+		"BOOMERANG" : {
+			"abilityType"   : "BOOMERANG",
+			"hits"      : "ONCE",
+			"affects"      : 1,
+			"requires"     : null,
+			"cooldown"     : 250,
+			"requires"      : "BOOMERANG",
+			"AP"           : 16,
+			"timeToLive"   : 1000,
+			"damage"       : 20,
+			"accel"        : 0,
+			"maxSpeed"     : 5,
+			"radius"       : 15,
+			"friction"	   : 8,
+			"return"	   : true,
+			"color"      : "gray",
+			"imageindex" : "placeholder.png",
+			"onNew" : {
+				"image" : "placeholder.png",
+				"sound" : "shoot"
+			},
+			"onOld" : {
+				"image" : "placeholder.png",
+				"sound" : "placeholder.sound"
+			}
+		},
+		"MELEE_2" : {
+			"abilityType"   : "MELEE_2",
+			"hits"      : "ONCE",
+			"affects"       : 3,
+			"requires"      : null,
+			"cooldown"      : 250,
+			"AP"            : 16,
+			"timeToLive"     : 90,
+			"damage"       : 20,
+			"accel"        : 0,
+			"maxSpeed"     : 15,
+			"radius"       : 15,
+			"friction"	   : 0,
+			"color"      : "purple",
+			"imageindex" : "placeholder.png",
+			"onNew" : {
+				"image" : "placeholder.png",
+				"sound" : "shoot"
+			},
+			"onOld" : {
+				"image" : "placeholder.png",
+				"sound" : "placeholder.sound"
+			}
+		},
+		"FLAME_SLASH" : {
+			"abilityType"   : "FLAME_SLASH",
+			"hits"      : "ONCE",
+			"affects"       : 10,
+			"requires"      : null,
+			"cooldown"      : 100,
+			"AP"            : 500,
+			"timeToLive"     : 500,
+			"damage"       : 300,
+			"accel"        : 0,
+			"maxSpeed"     : 20,
+			"radius"       : 50,
+			"friction"	   : 0,
+			"color"      : "orange",
+			"imageindex" : "placeholder.png",
+			"onNew" : {
+				"image" : "placeholder.png",
+				"sound" : "explosion"
+			},
+			"onOld" : {
+				"image" : "placeholder.png",
+				"sound" : "placeholder.sound"
+			}
+		},
+
+		"SMASH" : {
+			"abilityType"   : "SMASH",
+			"hits"      : "ONCE",
+			"affects"       : 30,
+			"requires"      : null,
+			"cooldown"      : 1000,
+			"AP"            : 20,
+			"timeToLive"    : 100,
+			"damage"       : 20,
+			"accel"        : 0,
+			"maxSpeed"     : 0,
+			"radius"       : 50,
+			"friction"	   : 0,
+			"color"      : "black",
+			"imageindex" : "placeholder.png",
+			"onNew" : {
+				"image" : "placeholder.png",
+				"sound" : "shield"
+			},
+			"onOld" : {
+				"image" : "placeholder.png",
+				"sound" : "placeholder.sound"
+			}
+		},
+		"PASTE_SHOT" : {
+			"abilityType"   : "PASTE_SHOT",
+			"hits"      : "ONCE",
+			"affects"       : 1,
+			"requires"      : "TURTLE_PASTE",
+			"cooldown"      : 100,
+			"AP"            : 50,
+			"timeToLive"     : 800,
+			"damage"       : 30,
+			"accel"        : 0,
+			"maxSpeed"     : 20,
+			"radius"       : 12,
+			"friction"	   : 0,
+			"color"      : "#bada55",
+			"imageindex" : "placeholder.png",
+			"onNew" : {
+				"image" : "placeholder.png",
+				"sound" : "shoot"
+			},
+			"onOld" : {
+				"image" : "placeholder.png",
+				"sound" : "placeholder.sound"
+			}
+		},
+
+		"PEW" : {
+			"abilityType"   : "PEW",
+			"hits"      : "ONCE",
+			"affects"       : 1,
+			"requires"      : null,
+			"cooldown"      : 15,
+			"AP"            : 2,
+			"timeToLive"     : 2000,
+			"damage"       : 1,
+			"accel"        : 0,
+			"maxSpeed"     : 30,
+			"radius"       : 7,
+			"friction"	   : 0,
+			"color"      : "yellow",
+			"imageindex" : "placeholder.png",
+			"onNew" : {
+				"image" : "placeholder.png",
+				"sound" : "shoot"
+			},
+			"onOld" : {
+				"image" : "placeholder.png",
+				"sound" : "placeholder.sound"
+			}
+		},
+
+		"BOMB_SETUP" : {
+			"abilityType"   : "BOMB_SETUP",
+			"hits"      : "ONCE",
+			"affects"       : 1,
+			"requires"      : "BOMB",
+			"cooldown"      : 200,
+			"AP"            : 2,
+			"timeToLive"     : 10000,
+			"damage"       : 100,
+			"accel"        : 0,
+			"maxSpeed"     : 0,
+			"radius"       : 10,
+			"friction"	   : 0,
+			"color"      : "black",
+			"imageindex" : "placeholder.png",
+			"onNew" : {
+				"image" : "placeholder.png",
+				"sound" : "shield"
+			},
+			"onOld" : {
+				"image" : "placeholder.png",
+				"sound" : "explosion"
+			}
+		},
+
+		"THUNDER_SPELL" : {
+			"abilityType"   : "THUNDER_SPELL",
+			"hits"      : "ONCE",
+			"affects"       : 100,
+			"requires"      : "THUNDER_SCROLL",
+			"cooldown"      : 1000,
+			"AP"            : 50,
+			"timeToLive"     : 40,
+			"damage"       : 2000,
+			"accel"        : 0,
+			"maxSpeed"     : 0,
+			"radius"       : 500,
+			"friction"	   : 0,
+			"color"      : "yellow",
+			"imageindex" : "placeholder.png",
+			"onNew" : {
+				"image" : "placeholder.png",
+				"sound" : "shield"
+			},
+			"onOld" : {
+				"image" : "placeholder.png",
+				"sound" : "explosion"
+			}
+		},
+
+		"SURPRISE" : {
+			"abilityType"   : "SURPRISE",
+			"hits"      : "ONCE",
+			"affects"       : 1,
+			"requires"      : "SURPRISE",
+			"cooldown"      : 100,
+			"AP"            : 50,
+			"timeToLive"     : 10,
+			"damage"       : 30,
+			"accel"        : 0,
+			"maxSpeed"     : 0,
+			"radius"       : 2,
+			"friction"	   : 0,
+			"color"      : "#bada55",
+			"imageindex" : "placeholder.png",
+			"onNew" : {
+				"image" : "placeholder.png",
+				"sound" : "shoot"
+			},
+			"onOld" : {
+				"image" : "placeholder.png",
+				"sound" : "placeholder.sound"
+			}
+		}
+	}
+	
+}

@@ -1,0 +1,21 @@
+<html>
+<head>
+	<script src="/scripts/nge3.js"> </script>
+    <script src="/socket.io/socket.io.js"> </script>
+    <script>
+    	
+  
+
+        window.onload = function() {
+        	var game;
+        	var s = new Screen();
+        	s.init(600,600,document.body);
+        	game = new Game(s);
+        	game.run();
+        };
+    </script>
+</head>
+
+<body>
+</body>
+</html>
