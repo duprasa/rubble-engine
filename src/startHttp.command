@@ -1,1 +1,0 @@
-sudo supervisor startHttpServer.js

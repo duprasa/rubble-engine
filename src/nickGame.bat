@@ -1,2 +1,0 @@
-node startGameServer.js
-pause

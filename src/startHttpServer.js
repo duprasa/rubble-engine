@@ -1,3 +1,3 @@
-var httpServer = require('./Server/httpServer.js');
+var httpServer = require('./Server/HTTPServer.js');
 console.log('stating http server!');
 httpServer.start();

@@ -9,7 +9,7 @@
 var log        = require('../../Utility/Logger').makeInstance("MapHandler");
 var data       = require('../Data');
 var fm         = require('../../Utility/FileManager');
-var settings   = require('./Settings');
+var settings   = require('./settings');
 var mapBuilder = require('../Builders/MapBuilder');
 var fs 		   = require("fs");
 

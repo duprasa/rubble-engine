@@ -1,2 +1,0 @@
-node Main.js
-pause
